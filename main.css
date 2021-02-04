@@ -41,14 +41,22 @@ header{
 header .logo{
     position: relative;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
     padding: 7vh 5vw 2vh 7vw;
 }
+header .navbarfull ul li{
+    list-style: none;
+}
+header .navbarfull ul li a{
+    visibility: hidden;
+}
 
-/* ////  Navbar-For-Full-screen  //// */
+@media (max-width : 601 px){
+
+    /* ////  Navbar-For-Full-screen  //// */
 header .navbarfull{
     position: absolute;
     padding: 7vh 1vw 2vh;
@@ -58,6 +66,7 @@ header .navbarfull{
 
 header .navbarfull ul{
     display: flex;
+    /* display: hidden; */
 }
 header .navbarfull ul li {
     list-style: none;
@@ -71,29 +80,32 @@ header .navbarfull ul li a{
     text-decoration: none;
     border-bottom: rgb(255, 255, 255) solid 1px;
     transition: 0.4s;
+    visibility: visible;
 }
 header .navbarfull ul li a:hover{
     transform: scale(1.5);
     border: none;
 }
+}
+
 
 /* //////////  Introduction  ////////// */
 .banner .content{
     margin: 1vh 1vw;
     padding: 6vh 0vw 0vh 6vw;
-    font-size: 18px;
+    /* font-size: 1; */
 }
 .banner .content h1{
-    font-size: 2.5em;
     margin-bottom: 2vh;
 }
 .banner .content h1 span{
     font-family: 'Architects Daughter', cursive;
-    font-size: 1.3em;
+    font-size: 32px;
     color: rgb(41, 255, 69);
 }
 .banner .content p {
 font-family: 'Lemonada', cursive;
+
 }
 
 /* ///  Navbar-For-Mobile-Screen // */
@@ -114,13 +126,12 @@ font-family: 'Lemonada', cursive;
     z-index: 1;
 }
 .active.navbar{
-    width: 40vw;
+    width: 60vw;
 }
 .navbar ul{
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: 5vh;
 }
 .navbar ul li{
     list-style: none;
@@ -130,6 +141,7 @@ font-family: 'Lemonada', cursive;
     display: inline-block;
     margin: 0.3vh 0.1vw;
     padding: 2vh 1.5vw;
+    font-size: 25px;
     background-color: rgb(0, 149, 235);
     text-decoration: none;
     text-transform: uppercase;
