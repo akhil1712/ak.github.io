@@ -20,12 +20,12 @@ body{
                         rgba(0, 0, 0, 0.7),
                         rgba(0, 0, 0, 0.1),
                         rgba(0, 0, 0, 0.4))
-                        ,url(/1876.jpg);
+                        ,url(../1876.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
-    transition: 0.2s;  
-    z-index: 1;  
+    transition: 0.2s;
+    z-index: 1;
 }
 header{
     position: absolute;
@@ -182,5 +182,5 @@ font-family: 'Lemonada', cursive;
 .toggle.active::after{
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%)  rotate(-45deg); 
+    transform: translate(-50%,-50%)  rotate(-45deg);
 }} /* ## */
