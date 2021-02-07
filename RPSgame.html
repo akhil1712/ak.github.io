@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<header> 
+
+<img id="logo" src="babydragon.png" alt="babydragon" height="80px">
+    <!-- <p id="logoname">BD</p> -->
+    <p id="cName">BabyDragon</p>
+    <h1>GAME</h1>
+    <p id="name">
+        <b>ROCK &CenterDot;PAPER &CenterDot;SCISSORS</b>
+    </p>
+</header>
+
+<body>
+    <div id="score-Box" class="score-Board">
+        <div id="player" class="score">Player</div>
+        <div id="comp" class="score">Comp</div>
+        <span id="player-Score">0</span>:<span id="computer-Score">0</span>
+    </div>
+    <div class="result">
+        <p>RESULT GO HERE</p>
+    </div>
+    <div class="choices">
+        
+        <div class="emoji">
+            <img id="r" src="rock.png" alt="stone" height="80px">
+        </div>
+
+        <div class="emoji">
+            <img id="p" src="paper.png" alt="Paper" height="80px">
+        </div>
+
+        <div class="emoji"> 
+            <img id="s" src="scissors.png" alt="Scissors" height="80px">
+        </div>
+        <p>Make your Move.</p>
+
+        <div class="option-Box" id="options-i">
+            <ul class="options">
+                <li class="option" id="replay">Play Again</li>
+                <li class="option" id="new">New Game</li>
+                <li class="option" id="exit">Exit</li>
+            </ul>
+        </div>
+    </div>
+<script src="game.js"></script>
+</body>
+</html>

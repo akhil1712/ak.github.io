@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>AK WebdeV</title>
+</head>
+<body>
+    <section>
+        <img id="bg" src="..\image\bg2.jpg" alt="backgroud">
+        <img id="moon" src="..\image\moon.png" alt="moon">
+        <img id="mountain" src="..\image\mountain.png" alt="mountain">
+        <img id="road" src="..\image\road.png" alt="road">
+        <h1 id="h1text">Hello, I am Akhil</h1>
+    </section>
+    <script type="text/javascript">
+    let backgroud = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let h1text = document.getElementById("h1text");
+
+    window.addEventListener('scroll',function(){
+        var value = window.scrollY;
+        // backgroud.style.top     =  value * 0.5 + 'px';
+        moon.style.left         =  -value * 0.5 + 'px';
+        mountain.style.top      = -value * 0.15 + 'px';
+        road.style.top        =  value * 0.15 + 'px';
+        console.log('text');
+        h1text.style.top        =  value * 1 + 'px';
+        // h1text.style.color    = `blue`        
+})
+    </script>
+</body>
+</html>

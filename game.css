@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border */
+}
+body{
+    background-color: rgb(0, 0, 63);
+}
+header{
+    font-size: 30px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: navy;
+    text-align: center;
+    background-color: rgb(0, 255, 106);
+    min-height: 150px;
+}
+header #logo{
+    padding: 5px 5px 5px 3px;
+    background-color: rgb(255, 123, 0);
+    border-radius: 20%;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+#cName{
+    font-size: 12px;
+    font-weight: bolder;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+/* #logoname{
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: oblique;
+    position: absolute;
+    top: 45px;
+    left: 35px; */
+#name{
+    padding: 1%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.score-Board{
+    margin: 15px auto;
+    padding: 30px 30px;
+    font-size: 40px;
+    color: #ffffff;
+    max-width: 150px;
+    min-width: 200px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    position: relative;
+}
+.score{
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: rgb(255, 123, 0);
+    border: 2px solid seashell;
+    font-size: 20px;
+    max-width: 30px;
+    min-width: 30px;
+    overflow: hidden;
+}
+#player{
+    color: black;
+    position: absolute;
+    left: -100px;
+    top: 30px;
+}
+#comp{
+    color: black;
+    position: absolute;
+    right: -100px;
+    top: 30px;
+}
+.result{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans Unicode',Verdana, sans-serif;
+    color: seashell;
+}
+.choices{
+    margin-top: 10px;
+    text-align: center;
+}
+.emoji{
+    margin: 5px 15px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+.emoji :hover{
+    background-color: rgb(0, 255, 106);    
+}
+.emoji #r{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.emoji #p{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.emoji #s{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.choices p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    color: cornsilk;
+}
+.option-Box{
+    margin-top: 50px;
+    text-align: center;
+}
+.options{
+    display: inline-flex;
+    list-style: none;
+}
+.option{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 5px 15px ;
+    padding: 10px 25px;
+    border: solid black 2px;
+    border-radius: 40px;
+    min-width: 50px;
+    background-color:rgb(255, 123, 0) ;
+}
+.green-glow{
+    border: 2px solid rgb(0, 255, 0);
+    box-shadow: 10px 10px 50px rgb(0, 255, 0);
+}
+.red-glow{
+    border: 2px solid red;
+    box-shadow: 10px 10px 50px rgb(255, 0, 0);
+}
+.gray-glow{
+    border: 2px solid yellow;
+    box-shadow: 10px 10px 50px yellow;
+}
